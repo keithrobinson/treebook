@@ -1,8 +1,9 @@
 <div class="page-header">
+	
+	<%= link_to "Post a new status", new_status_path, class: "btn btn-success pull-right" %>
 	<h1>All of the statuses</h1>
-</div>
 
-<%= link_to "Post a new status", new_status_path, class: "btn btn-success" %>
+</div>
 
 <% @statuses.each do |status| %>
 <div class="status">
